@@ -177,3 +177,75 @@ header {
 }
   
 /* Write your CSS below */
+@media screen and (max-width: 760px) {
+  .navbar{
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0;
+    
+  }
+  .navbar li{
+    width: 100%;
+    border-top:1px solid#fff;
+    
+  }
+  .navbar li:last-child {
+    border-right: none;
+  }
+
+  .navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .main-article {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    display: flex;
+  }
+  
+  .main-article img {
+    width: 100%;
+    height: auto;
+    display: flex;
+  }
+  
+  .main-article .image {
+    width: 100%;
+    padding: 0;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .main-article .content {
+    width: 100%;
+    padding: 0 10px;
+    height: auto;
+    margin-right:10px;
+    margin-top: 10px;
+  }
+  .articles-container {
+    display:top;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    margin-block: 10px;
+  }
+
+  .article {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  .article img {
+    width: 100%;
+    height: auto;
+  }
+  
+
+}
