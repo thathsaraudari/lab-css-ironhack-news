@@ -102,6 +102,15 @@ header {
   font-weight: bold;
 }
 
+.navbar-icon {
+  display: none;
+  font-size: 24px;
+  color: white;
+  background-color: #333;
+  padding: 15px;
+  cursor: pointer;
+}
+
 /* Articles */
 .main-article {
   margin: 20px;
@@ -249,9 +258,6 @@ header {
 }
   
 @media screen and (min-width: 761px) and (max-width: 1023px) {
-  body {
-    background-color: rgb(236, 232, 224);
-  }
 
   .navbar {
     display: flex;
@@ -308,8 +314,32 @@ header {
   
 }
 
-@media screen and (min-width: 1024px) {
-  body {
-    background-color: green;
+@media screen and (width < 480px) {
+  .navbar-icon {
+    display: block;
+  }
+
+  .navbar {
+    display: none;
+  }
+  
+  .navbar li {
+    border: none;
+  }
+
+  .newspaper-name {
+    border-bottom: none;
+  }
+
+  .main-article {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .article {
+    margin-bottom: 10px;
   }
 }
